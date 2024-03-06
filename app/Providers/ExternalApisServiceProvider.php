@@ -23,7 +23,6 @@ class ExternalApisServiceProvider extends ServiceProvider
             ->give(fn() => (new Client([
                 RequestOptions::VERIFY => false,
                 RequestOptions::TIMEOUT => config('external-api.proxy.timeout'),
-                RequestOptions::PROXY => ['52.151.210.204:9002']
             ])));
     }
 }

@@ -10,7 +10,6 @@ class CreateIpRequest extends BaseFormRequest
     public function rules(): array
     {
         return [
-//            'ip_host' => ['required', 'regex:/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:[0-9]+$/']
             'ip_hosts' => ['required'],
             'ip_hosts.*' => ['required', 'string', 'regex:/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:[0-9]+$/']
         ];

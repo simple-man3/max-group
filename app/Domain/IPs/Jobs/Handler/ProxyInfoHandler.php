@@ -29,7 +29,6 @@ class ProxyInfoHandler
         $this->setProxyLocation($proxy);
         $this->setProxyType($proxy);
         $this->updateDataProxy($proxy);
-        dd('end');
     }
 
     private function setProxyLocation(Proxy $proxy): void
